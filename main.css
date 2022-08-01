@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	position: relative;
+	height: 100vh;
+	widows: 100vw;
+}
+
+.lobster {
+	font-family: 'Lobster', cursive;
+}
+
+.main {
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+
+.main > div {
+	margin: auto;
+	font-size: 8vw;
+	text-align: center;
+}
+
+.sun {
+	position: absolute;
+	top: -220vw;
+	right: -220vw;
+	border-radius: 50%;
+	animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.sun.yellow {
+	border: 200vw dashed rgba(255, 215, 0, .08);
+	animation-duration: 20s;
+}
+
+.sun.orange {
+	border: 200vw dashed rgba(255, 165, 0, .06);
+	animation-duration: 30s;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
