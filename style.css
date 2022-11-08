@@ -1,0 +1,99 @@
+/*
+    OHIO-L (YSU) Tau Beta Pi Website
+    Content Style Sheet
+
+    original author: Sean Livingston
+    date created: 10/13/2022
+
+    revision author: Sean Livingston
+    revision date: 10/15/2022
+*/
+
+/* general section setup */
+main {
+    width: 90vw;
+    margin: 3vh auto 10vh;
+    min-height: 50vh;
+} @media screen and (min-width: 600px) {
+    /* if on large screen, some pages shouldn't
+        be full width for better readability */
+    main:not(.full) {
+        width: 70vw;
+    }
+}
+
+ol {
+    list-style:upper-roman;
+}
+
+/* content title and subtitle */
+.title {
+    text-align: center;
+    margin-bottom: 3%;
+} .title * {
+    margin: 0;
+} .title h1 {
+    font-size: 5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant: small-caps;
+} .title h2 {
+    font-size: 2.5em;
+}
+
+/* For important content sections */
+/* puts a box around the item and adds the text important above its title */
+.important {
+    border: 1px solid darkred;
+    padding: 1.5%;
+} .important::before {
+    content: "Important!";
+    color: crimson;
+}
+
+/* expand section element to take up entire width of main element */
+/* section element should hold main text */
+section {
+    width: 100%;
+    line-height: 1.5;
+}
+
+/* styles for photo gallery */
+.photos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.photo {
+    flex: 0 1 45%;
+    margin-bottom: 5%;
+} .photo * {
+    width: 100%;
+}
+
+/* styles for officer list/photos */
+.officers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.officer {
+    /* sets base width of each officer to 20% body width so they all fit in a row with nice gaps */
+    flex: 0 1 22%;
+    margin-bottom: 10%;
+} .officer * {
+    margin: 0;
+} .officer div {
+    margin-top: 5%;
+}.officer img {
+    width: 90%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 2px 1px lightgrey;
+}
+
+.twoCols {
+    column-count: 2;
+    gap: 5%;
+}

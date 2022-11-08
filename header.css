@@ -1,0 +1,98 @@
+/*
+    OHIO-L (YSU) Tau Beta Pi Website
+    Header and Footer Style Sheet
+
+    original author: Sean Livingston
+    date created: 10/13/2022
+
+    revision author: Sean Livingston
+    revision date: 10/15/2022
+*/
+
+/* Import Lato font family */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* general body setup */
+body {
+    width: 100vw;
+    margin: 10vmax 0 0 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+::selection {
+    background-color: #cb333b;
+    color: white;
+}
+
+/*  */
+a {
+    color: black;
+} a:hover {
+    color: #cb333b;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    padding: 2% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #cb333b;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center stretch;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.navItem a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    width: 100%;
+    margin: 10% 0;
+}
+
+.logo {
+    height: 5vw;
+} .logo.tbp {
+    /* makes TBP logo white */
+    filter: brightness(100);
+}
+
+/* Footer section */
+footer {
+    padding: 1em;
+    background-color: black;
+    color: white;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} footer a {
+    /* makes links nice on black background */
+    color: white;
+}
+
+.skyline {
+    width: 40vw;
+    margin: -1% 30%;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+}
