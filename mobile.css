@@ -1,14 +1,3 @@
-/*
-    OHIO-L (YSU) Tau Beta Pi Website
-    Mobile Style Sheet
-
-    original author: Sean Livingston
-    date created: 10/14/2022
-
-    revision author: Sean Livingston
-    revision date: 10/15/2022
-*/
-
 @media screen and (max-width: 600px) {
     body {
         margin: 0;
